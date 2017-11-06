@@ -5,6 +5,7 @@
 * npm install --save nodemon
 * npm install --save bcrypt-nodejs
 * npm install --save bcrypt-nodejs
+* npm install --save passport passport-jwt
 
 ## Run it (requires mongo to be started as well)
 * mongod
