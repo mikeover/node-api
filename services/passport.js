@@ -9,7 +9,7 @@ const LocalStrategy = require('passport-local');
 const localOptions = { usernameField: 'email' }; // override default of 'username'
 const localLogin = new LocalStrategy(localOptions, function(email, password, done) {
   // Verify this email and password, call done with the user
-  User.findOne({ email: email }, function(err, user) {
+  User.findOne({ email: email.toLowerCase() }, function(err, user) {
     if (err) { return done(err); }
     if (!user) { return done(null, false); }
 
