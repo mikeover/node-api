@@ -7,6 +7,7 @@
 * npm install --save bcrypt-nodejs
 * npm install --save passport passport-jwt
 * npm install --save passport-local
+* npm install --save cors
 
 ## Run it (requires mongo to be started as well)
 * mongod
